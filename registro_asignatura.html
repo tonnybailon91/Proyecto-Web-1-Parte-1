@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Asignatura</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Registro de Asignatura</h1>
+    </header>
+    <main>
+        <form id="asignaturaForm" onsubmit="return validateAsignatura()">
+            <label for="codigo">Código De La Asignatura:</label>
+            <input type="text" id="codigo" name="codigo" required>
+
+            <label for="nombre">Nombre De La Asignatura:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="carrera">Carrera:</label>
+            <input type="text" id="carrera" name="carrera" required>
+
+            <label for="periodo">Periodo Académico:</label>
+            <input type="text" id="periodo" name="periodo" required>
+
+            <label for="modalidad">Modalidad:</label>
+            <select id="modalidad" name="modalidad" required>
+                <option value="presencial">Presencial</option>
+                <option value="virtual">Virtual</option>
+            </select>
+
+            <label for="sede">Sede:</label>
+            <input type="text" id="sede" name="sede" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="tipo_matricula">Tipo de Matrícula:</label>
+            <select id="tipo_matricula" name="tipo_matricula" required>
+                <option value="ordinaria">Ordinaria</option>
+                <option value="extraordinaria">Extraordinaria</option>
+                <option value="especial">Especial</option>
+            </select>
+
+            <button type="submit">Registrar</button>
+            <button type="button" onclick="history.back()">Volver</button> <!-- Botón para volver atrás -->
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Software de automatización de sílabos para la ULEAM - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generación de Reporte o Informes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Generación de Reporte o Informes</h1>
+    </header>
+    <main>
+        <form id="reporteForm" onsubmit="return validateReporte()">
+            <label for="periodo">Período:</label>
+            <input type="text" id="periodo" name="periodo" required>
+            <button type="submit">Generar Reporte</button>
+        </form>
+        <button onclick="window.history.back()">Volver</button> <!-- Botón de volver atrás -->
+    </main>
+    <footer>
+        <p>&copy; Software de automatización de sílabos para la ULEAM - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

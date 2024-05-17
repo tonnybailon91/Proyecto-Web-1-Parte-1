@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Interfaz de Administrador</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos -->
+</head>
+<body>
+    <header>
+        <h1>Panel de Administrador</h1> <!-- Título de la página -->
+    </header>
+    <nav>
+        <ul>
+            <li><a href="registro_asignatura.html">Registrar Asignatura</a></li> <!-- Enlace a la página de registro de asignatura -->
+            <li><a href="registro_silabos.html">Registrar Sílabos</a></li> <!-- Enlace a la página de registro de sílabos -->
+            <li><a href="consulta_silabos.html">Consultar Sílabos</a></li> <!-- Enlace a la página de consulta de sílabos -->
+            <li><a href="reporte_informes.html">Generar Reporte</a></li> <!-- Enlace a la página de generación de reportes -->
+        </ul>
+    </nav>
+    <button onclick="goBack()">Volver</button> <!-- Botón para volver atrás -->
+
+    <div class="portada">
+        <img class="img-port" src="img/libro1.jpg" alt="">
+    </div>
+    
+    <footer>
+        <p>&copy; Software de automatización de sílabos para la ULEAM - Todos los derechos reservados</p> <!-- Pie de página con el año y el nombre de la institución -->
+    </footer>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Función para retroceder una página en la historia del navegador
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta de Sílabos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Consulta de Sílabos</h1>
+    </header>
+    <main>
+        <form id="consultaForm" onsubmit="return validateConsulta()">
+            <label for="codigo">Código de Asignatura:</label>
+            <input type="text" id="codigo" name="codigo" required>
+            <button type="submit">Consultar</button>
+        </form>
+        <div id="resultado"></div>
+        <button onclick="window.history.back()">Volver</button> <!-- Botón de volver atrás -->
+    </main>
+    <footer>
+        <p>&copy; Software de automatización de sílabos para la ULEAM - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

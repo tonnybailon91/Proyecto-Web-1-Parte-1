@@ -1,0 +1,105 @@
+/* Este código va en tu archivo styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50; /* Verde manzana */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.logo {
+    display: inline-block; /* Para que la imagen se muestre en línea con el texto */
+    vertical-align: middle; /* Alinea verticalmente la imagen */
+    width: 50px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto; /* Hace que la altura se ajuste automáticamente al ancho */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+}
+
+h1 {
+    margin: 0;
+    display: inline-block; /* Para que el título se muestre en línea con la imagen */
+    vertical-align: middle; /* Alinea verticalmente el título */
+}
+
+.informacion{
+	background: rgb(245, 222, 180);
+	padding-top: 1px;
+	width: 90%;
+	margin-left: 4em;
+
+}
+
+.img-port{
+	width: 100%;
+	margin-top: 3em;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #e5f4e2; /* Verde manzana más claro */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"],
+button {
+    background-color: #4CAF50; /* Verde manzana */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button:hover {
+    background-color: #45a049; /* Verde manzana más oscuro al pasar el mouse */
+}
+
+.forgot-password {
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: #4CAF50; /* Verde manzana */
+    position: relative; /* Establece el posicionamiento relativo del footer */
+}
+
+.redes-sociales {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Hace que la altura se ajuste automáticamente */
+}

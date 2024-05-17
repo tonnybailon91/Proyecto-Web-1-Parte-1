@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Sílabos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Registro de Sílabos</h1>
+    </header>
+    <main>
+        <form id="silabosForm" onsubmit="return validateSilabos()">
+            <label for="nombre_documento">Nombre del Documento (Sílabo):</label>
+            <input type="text" id="nombre_documento" name="nombre_documento" required>
+
+            <label for="codigo_asignatura">Código de Asignatura:</label>
+            <input type="text" id="codigo_asignatura" name="codigo_asignatura" required>
+
+            <label for="nombre_asignatura">Nombre de la Asignatura:</label>
+            <input type="text" id="nombre_asignatura" name="nombre_asignatura" required>
+
+            <label for="paralelos">Paralelos:</label>
+            <input type="text" id="paralelos" name="paralelos" required>
+
+            <label for="periodo_academico">Período Académico:</label>
+            <input type="text" id="periodo_academico" name="periodo_academico" required>
+
+            <label for="facultad">Facultad:</label>
+            <input type="text" id="facultad" name="facultad" required>
+
+            <label for="docente_responsable">Docente Responsable:</label>
+            <input type="text" id="docente_responsable" name="docente_responsable" required>
+
+            <label for="ano_lectivo">Año Lectivo:</label>
+            <input type="text" id="ano_lectivo" name="ano_lectivo" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+
+            <label for="archivo">Subir Archivo (Formato Word o PDF):</label>
+            <input type="file" id="archivo" name="archivo" accept=".doc, .docx, .pdf" required>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </main>
+    <button onclick="goBack()">Volver</button> <!-- Botón para volver atrás -->
+    <footer>
+        <p>&copy; Software de automatización de sílabos para la ULEAM - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Función para retroceder una página en la historia del navegador
+        }
+    </script>
+</body>
+</html>
+

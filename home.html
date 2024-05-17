@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos -->
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="Logo ULEAM">
+        <h1>Bienvenido a la Plataforma de Sílabos - ULEAM</h1> <!-- Título de la página -->
+    </header>
+    <nav>
+        <a href="#" onclick="logout()" class="logout">Cerrar Sesión</a> <!-- Enlace para cerrar sesión -->
+        <ul>
+            <li><a href="admin.html">Administrador</a></li> <!-- Enlace a la interfaz de administrador -->
+            <li><a href="docentes.html">Docentes</a></li> <!-- Enlace a la interfaz de docentes -->
+            <li><a href="estudiantes.html">Estudiantes</a></li> <!-- Enlace a la interfaz de estudiantes -->
+        </ul>
+    </nav>
+
+
+    <div class="portada">
+        <img class="img-port" src="img/libro1.jpg" alt="">
+    </div>
+    
+
+
+    <footer>
+        <p>&copy; Software de automatización de sílabos para la ULEAM - Todos los derechos reservados</p> <!-- Pie de página con el año y el nombre de la institución -->
+        <img class="redes-sociales" src="img/redes-sociales.png"> <!-- Logo de la ULEAM -->
+    </footer>
+
+    <script>
+        function logout() {
+            // Aquí puedes agregar la lógica para cerrar sesión, como limpiar el almacenamiento local o eliminar cookies
+            // Después de cerrar sesión, redirige al usuario a la página anterior
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
